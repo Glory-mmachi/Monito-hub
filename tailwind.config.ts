@@ -12,6 +12,9 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      screens: {
+        'custom': {'max': '850px'},// Define a custom breakpoint at 850px
+      },
     },
   },
   plugins: [],
