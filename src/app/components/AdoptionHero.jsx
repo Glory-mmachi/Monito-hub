@@ -13,7 +13,7 @@ export default function AdoptionHero() {
           </h2>
         </div>
         <div>
-          <button className="hidden md:flex md:justify-center md:items-center text-[#003459] text-[14px] font-[500] border border-[#003459] px-4 lg:px-6 py-2 rounded-[57px]">
+          <button className="hidden md:flex md:justify-center md:items-center text-[#003459] text-[14px] font-[500] border border-[#003459] px-4 lg:px-6 py-2 rounded-[57px] transition-transform duration-200 hover:scale-105">
             View more
             <span className="ml-2">
               <Image src="/forwardArrow.svg" alt="arrow" width={4} height={7} />
@@ -69,7 +69,7 @@ export default function AdoptionHero() {
 
             {/* Buttons */}
             <div className="flex flex-col md:flex-row gap-4 mt-4 justify-center md:justify-start">
-              <button className="flex items-center justify-center text-[#003459] text-[14px] lg:text-[16px] font-[500] border border-[#003459] px-4 lg:px-6 py-2 rounded-[57px]">
+              <button className="flex items-center justify-center text-[#003459] text-[14px] lg:text-[16px] font-[500] border border-[#003459] px-4 lg:px-6 py-2 rounded-[57px] transition-transform duration-200 hover:scale-105">
                 View intro
                 <span className="ml-2">
                   <Image
@@ -80,7 +80,7 @@ export default function AdoptionHero() {
                   />
                 </span>
               </button>
-              <button className="bg-[#003459] text-[14px] lg:text-[16px] font-[500] text-[#FFFFFF] px-4 lg:px-6 py-2 rounded-[57px]">
+              <button className="bg-[#003459] text-[14px] lg:text-[16px] font-[500] text-[#FFFFFF] px-4 lg:px-6 py-2 rounded-[57px]   transition-all duration-300 hover:bg-[#316377] hover:shadow-lg active:scale-95">
                 Explore now
               </button>
             </div>

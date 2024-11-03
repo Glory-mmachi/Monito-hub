@@ -81,7 +81,7 @@ export default function Categories() {
             </h2>
           </div>
           <div>
-            <button className="hidden md:flex md:justify-center md:items-center text-[#003459] text-[14px] font-[500] border border-[#003459] px-4 lg:px-6 py-2 rounded-[57px]">
+            <button className="hidden md:flex md:justify-center md:items-center text-[#003459] text-[14px] font-[500] border border-[#003459] px-4 lg:px-6 py-2 rounded-[57px] transition-transform duration-200 hover:scale-105">
               View more
               <span className="ml-2">
                 <Image
@@ -100,15 +100,22 @@ export default function Categories() {
             {petsArray.map((pet) => (
               <div
                 key={pet.id}
-                className="w-[250px] h-[375px] shadow-md flex flex-col pl-2 rounded-[12px] gap-2 mx-auto"
+                className="w-[250px] h-[375px] shadow-md flex flex-col p-2 rounded-[12px] gap-2 mx-auto hover:scale-105 transition-transform duration-500"
               >
-                <Image
-                  className="rounded-[10px]"
-                  src={pet.imageSrc}
-                  alt={pet.name}
-                  width={264}
-                  height={264}
-                />
+             
+                <div className="w-[240px] h-[250px] overflow-hidden rounded-[10px]">
+                  <div className="w-full h-full overflow-hidden rounded-[10px] transition-transform duration-500 hover:scale-105">
+                    <Image
+                      src={pet.imageSrc}
+                      alt={pet.name}
+                      width={250}
+                      height={250}
+                      className="object-cover w-full h-full"
+                    />
+                  </div>
+                </div>
+
+                {/* Pet name and details */}
                 <h1 className="text-[16px] font-[700]">{pet.name}</h1>
                 <div className="flex items-center gap-1">
                   <p className="text-[#667479] text-[12px] font-[500]">
@@ -124,18 +131,15 @@ export default function Categories() {
             ))}
           </main>
         </section>
+
         <div className="flex justify-center items-center w-full">
-        <button className="mt-10 flex justify-center items-center w-full  md:hidden text-[#003459] text-[14px]  font-[500] border border-[#003459] py-2 rounded-[57px]">
-              View more
-              <span className="ml-2">
-                <Image
-                  src="/forwardArrow.svg"
-                  alt="arrow"
-                  width={4}
-                  height={7}
-                />
-              </span>
-            </button></div>
+          <button className="mt-10 flex justify-center items-center w-full  md:hidden text-[#003459] text-[14px]  font-[500] border border-[#003459] py-2 rounded-[57px] transition-transform duration-200 hover:scale-105">
+            View more
+            <span className="ml-2">
+              <Image src="/forwardArrow.svg" alt="arrow" width={4} height={7} />
+            </span>
+          </button>
+        </div>
       </div>
     </section>
   );

@@ -5,6 +5,7 @@ import PorductHero from "./components/PorductHero";
 import Products from "./components/Products";
 import AdoptionHero from "./components/AdoptionHero"
 import PetKnowledge from "./components/PetKnowledge";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Products />
       <AdoptionHero/>
       <PetKnowledge/>
+      <Footer/>
     </>
   );
 }

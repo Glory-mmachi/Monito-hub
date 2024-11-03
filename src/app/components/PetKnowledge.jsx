@@ -42,7 +42,7 @@ export default function PetKnowledge() {
             </p>
           </div>
           <div>
-            <button className="hidden md:flex md:justify-center md:items-center text-[#003459] text-[14px] font-[500] border border-[#003459] px-4 lg:px-6 py-2 rounded-[57px]">
+            <button className="hidden md:flex md:justify-center md:items-center text-[#003459] text-[14px] font-[500] border border-[#003459] px-4 lg:px-6 py-2 rounded-[57px] transition-transform duration-200 hover:scale-105">
               View more
               <span className="ml-2">
                 <Image
@@ -61,8 +61,10 @@ export default function PetKnowledge() {
             {petsArray.map((pet) => (
               <div
                 key={pet.id}
-                className="w-[320px] h-[434px] shadow-md flex flex-col px-2 rounded-[12px] gap-8 mx-auto"
+                className="w-[320px] h-[434px] shadow-md flex flex-col px-2 rounded-[12px] gap-4 mx-auto hover:scale-105 transition-transform duration-500"
               >
+                 <div className="w-[310px] h-[240px] overflow-hidden rounded-[10px]">
+                 <div className="w-full h-full overflow-hidden rounded-[10px] transition-transform duration-500 hover:scale-105">
                 <Image
                   className="rounded-[10px]"
                   src={pet.imageSrc}
@@ -70,8 +72,10 @@ export default function PetKnowledge() {
                   width={364}
                   height={240}
                 />
+              </div>
+                </div>
                 <div className="text-justify ">
-                  <button className="bg-[#00A7E7] text-[#fff] text-[12px] font-[500] px-4 py-1 rounded-[28px]">
+                  <button className="bg-[#00A7E7] text-[#fff] text-[12px] font-[500] px-4 py-1 rounded-[28px] hover:scale-105 transition-transform duration-500">
                     Pet Knowledge
                   </button>
                   <h1 className="text-[16px] font-[700] my-1">{pet.title}</h1>
