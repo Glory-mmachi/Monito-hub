@@ -91,14 +91,14 @@ export default function Header() {
             <div className="flex justify-end">
               <Image
                 className="absolute bottom-0 w-[300px] md:w-[500px]"
-                src="/HeroBlueShape.svg"
-                alt="bg"
+                src="/Hero_Blue.png"
+                alt="Bluebg"
                 width={500}
                 height={635}
               />
               <Image
                 className="absolute bottom-0 w-[350px] md:w-[500px]"
-                src="/HeroYellowShape.svg"
+                src="/Hero_Yellow_Shape.png"
                 alt="bg"
                 width={500}
                 height={635}
