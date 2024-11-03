@@ -30,7 +30,7 @@ export default function ProductHero() {
           <section>
             <div className="max-w-[1080px] mx-auto h-auto md:h-auto flex flex-col md:flex-row justify-between items-center rounded-[20px] bg-[#003459] px-6 md:px-8 py-6 gap-6 md:gap-0">
               <p className="text-[20px] md:text-[24px] font-[700] text-white mb-4 md:mb-0 text-center md:text-left">
-                Register now so you don't miss our programs
+                Register now so you don&apos;t miss our programs
               </p>
 
               <form
@@ -56,7 +56,7 @@ export default function ProductHero() {
                   {submitted ? "Subscribed!" : "Subscribe Now"}
                 </button>
               </form>
-              
+
               {errorMessage && (
                 <p className="text-red-500 mt-2 text-center md:text-left animate-pulse">
                   {errorMessage}

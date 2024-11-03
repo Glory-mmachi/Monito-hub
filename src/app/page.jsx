@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Header from "./components/Header";
 import Categories from "./components/Categories";
 import PorductHero from "./components/PorductHero";
@@ -9,7 +8,7 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <Header />
       <Categories />
       <PorductHero />
@@ -17,6 +16,6 @@ export default function Home() {
       <AdoptionHero/>
       <PetKnowledge/>
       <Footer/>
-    </>
+    </div>
   );
 }

@@ -96,16 +96,16 @@ export default function Navbar() {
             <div className="md:hidden absolute top-16 z-10 left-0 w-full text-[#002A48] text-[24px] font-[700] bg-white opacity-[0.9] shadow-lg transition-opacity duration-300">
               <ul className="flex flex-col items-start p-4 gap-6">
                 <li className="cursor-pointer hover:text-[#316377] transition-colors duration-200">
-                  <a href="/">Home</a>
+                  <Link href="/">Home</Link>
                 </li>
                 <li className="cursor-pointer hover:text-[#316377] transition-colors duration-200">
-                  <a href="/">Category</a>
+                  <Link href="/">Category</Link>
                 </li>
                 <li className="cursor-pointer hover:text-[#316377] transition-colors duration-200">
-                  <a href="/">About</a>
+                  <Link href="/">About</Link>
                 </li>
                 <li className="cursor-pointer hover:text-[#316377] transition-colors duration-200">
-                  <a href="/">Contact</a>
+                  <Link href="/">Contact</Link>
                 </li>
               </ul>
             </div>
