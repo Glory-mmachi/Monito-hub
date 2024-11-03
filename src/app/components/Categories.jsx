@@ -9,7 +9,7 @@ export default function Categories() {
       gene: "Male",
       age: "02 months",
       price: "6.900.000 VND",
-      imageSrc: "/pomeranian_white.svg",
+      imageSrc: "/pomeranian_white_White.svg",
     },
     {
       id: "2",
