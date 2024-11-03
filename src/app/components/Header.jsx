@@ -20,7 +20,7 @@ export default function Header() {
               width={67}
               height={67}
             />
-            <h1 className="md:absolute left-3 -top-3 text-[36px] md:text-[45px] font-[800] z-30">
+            <h1 className="md:absolute left-3 top-0 text-[36px] md:text-[45px] font-[800] z-30">
               One more friend
             </h1>
             <h2 className="text-[24px] md:text-[32px] font-[700]">

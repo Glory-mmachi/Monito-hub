@@ -14,7 +14,7 @@ export default function Navbar() {
     <div className="relative">
       <Image
         className="absolute top-0 z-10"
-        src="/headerShape.svg"
+        src="/header_Shape.png"
         alt="bg"
         width={400}
         height={300}

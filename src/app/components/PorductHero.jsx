@@ -9,7 +9,7 @@ export default function ProductHero() {
         {/* Background Images */}
         <Image
           className="absolute bottom-0 z-10 md:block"
-          src="/Sec_section_Angle.svg"
+          src="/Sec_section_Angle.png"
           alt="background"
           width={657}
           height={687}
@@ -23,7 +23,7 @@ export default function ProductHero() {
         />
         <Image
           className="absolute right-0 z-20 hidden md:block"
-          src="/SecYellow_angle.svg"
+          src="/SecYellow_angle.png"
           alt="background-yellow"
           width={587}
           height={687}
