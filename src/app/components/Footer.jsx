@@ -100,7 +100,7 @@ export default function ProductHero() {
                 rel="noopener noreferrer"
               >
                 <Image
-                  src="/FaceBook.svg"
+                  src="/Facebook.jpg"
                   alt="Facebook"
                   width={24}
                   height={24}
