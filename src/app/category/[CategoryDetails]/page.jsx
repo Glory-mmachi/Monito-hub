@@ -10,7 +10,7 @@ import "swiper/css"; // core Swiper styles
 import "swiper/css/navigation"; // styles for specific modules
 import "swiper/css/pagination";
 
-export default function page({ params }) {
+export default function page() {
   return (
     <section>
       <Navbar />
