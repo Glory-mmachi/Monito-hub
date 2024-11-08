@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Categories() {
   const petsArray = [
@@ -80,7 +81,7 @@ export default function Categories() {
               Take a look at some of our pets
             </h2>
           </div>
-          <div>
+          <Link href="/category">
             <button className="hidden md:flex md:justify-center md:items-center text-[#003459] text-[14px] font-[500] border border-[#003459] px-4 lg:px-6 py-2 rounded-[57px] transition-transform duration-200 hover:scale-105">
               View more
               <span className="ml-2">
@@ -92,7 +93,7 @@ export default function Categories() {
                 />
               </span>
             </button>
-          </div>
+          </Link>
         </section>
         {/* Category section */}
         <section className="flex justify-center">
@@ -102,7 +103,7 @@ export default function Categories() {
                 key={pet.id}
                 className="w-[250px] h-[375px] shadow-md flex flex-col p-2 rounded-[12px] gap-2 mx-auto hover:scale-105 transition-transform duration-500"
               >
-             
+             <Link href={`/category/${pet.id}`}>
                 <div className="w-[240px] h-[250px] overflow-hidden rounded-[10px]">
                   <div className="w-full h-full overflow-hidden rounded-[10px] transition-transform duration-500 hover:scale-105">
                     <Image
@@ -114,7 +115,7 @@ export default function Categories() {
                     />
                   </div>
                 </div>
-
+                </Link>
                 {/* Pet name and details */}
                 <h1 className="text-[16px] font-[700]">{pet.name}</h1>
                 <div className="flex items-center gap-1">

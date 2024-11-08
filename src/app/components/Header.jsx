@@ -7,7 +7,13 @@ export default function Header() {
     <section className="bg-[#FCEED5] h-screen relative rounded-b-[40px]">
       <div>
         <Navbar />
-
+        <Image
+        className="absolute top-0 z-10"
+        src="/header_Shape.png"
+        alt="bg"
+        width={400}
+        height={300}
+      />
         {/* Hero section */}
         <main className="md:px-24 px-4 pt-14 text-[#002A48] flex flex-col md:flex-row justify-between">
           {/* Left hero section */}

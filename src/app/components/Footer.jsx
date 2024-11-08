@@ -27,44 +27,51 @@ export default function ProductHero() {
       <div className="md:px-24 px-4 py-10 flex flex-col gap-[40px]">
         {/* Input section */}
         <div>
-          <section>
-            <div className="max-w-[1080px] mx-auto h-auto md:h-auto flex flex-col md:flex-row justify-between items-center rounded-[20px] bg-[#003459] px-6 md:px-8 py-6 gap-6 md:gap-0">
-              <p className="text-[20px] md:text-[24px] font-[700] text-white mb-4 md:mb-0 text-center md:text-left">
-                Register now so you don&apos;t miss our programs
-              </p>
+  <section>
+    <div className="max-w-[1080px] mx-auto h-auto flex  custom:flex-col justify-between items-center rounded-[20px] bg-[#003459] px-4 md:px-8 py-6 gap-6 md:gap-8">
+      {/* Main Text */}
+      <p className="text-[18px] sm:text-[20px] md:text-[24px] font-[700] text-white text-center md:text-left">
+        Register now so you don&apos;t miss our programs
+      </p>
 
-              <form
-                onSubmit={handleSubmit}
-                className="flex flex-col md:flex-row justify-start items-center bg-white rounded-[14px] p-2 md:p-3 gap-[12px] w-full md:w-auto"
-              >
-                <input
-                  aria-label="Email input"
-                  className={`w-full md:w-[350px] lg:w-[450px] h-[48px] px-4 outline outline-gray-400 rounded-[8px] text-center md:text-left transition focus:outline-[#003459] ${
-                    submitted && "animate-pulse"
-                  }`}
-                  type="email"
-                  placeholder="Enter your email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-                <button
-                  className={`bg-[#003459] text-[16px] text-white px-4 py-2 rounded-[14px] w-full md:w-auto hover:bg-[#005b99] transition duration-300 ${
-                    submitted && "animate-bounce"
-                  }`}
-                  aria-label="Subscribe Now"
-                >
-                  {submitted ? "Subscribed!" : "Subscribe Now"}
-                </button>
-              </form>
+      {/* Form */}
+      <form
+        onSubmit={handleSubmit}
+        className="flex flex-col md:flex-row items-center bg-white rounded-[14px] p-2 md:p-3 gap-[12px] w-full md:w-auto"
+      >
+        {/* Email Input */}
+        <input
+          aria-label="Email input"
+          className={`w-full md:w-[350px] lg:w-[450px] h-[48px] px-4 outline-none rounded-[8px] text-center md:text-left transition focus:outline-[#003459] ${
+            submitted && "animate-pulse"
+          }`}
+          type="email"
+          placeholder="Enter your email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
 
-              {errorMessage && (
-                <p className="text-red-500 mt-2 text-center md:text-left animate-pulse">
-                  {errorMessage}
-                </p>
-              )}
-            </div>
-          </section>
-        </div>
+        {/* Submit Button */}
+        <button
+          className={`bg-[#003459] text-[14px] md:text-[16px] text-white px-4 py-2 rounded-[14px] w-full md:w-auto hover:bg-[#005b99] transition duration-300 ${
+            submitted && "animate-bounce"
+          }`}
+          aria-label="Subscribe Now"
+        >
+          {submitted ? "Subscribed!" : "Subscribe Now"}
+        </button>
+      </form>
+
+      {/* Error Message */}
+      {errorMessage && (
+        <p className="text-red-500 mt-2 text-center md:text-left animate-pulse">
+          {errorMessage}
+        </p>
+      )}
+    </div>
+  </section>
+</div>
+
 
         {/* Links section */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 md:gap-0">

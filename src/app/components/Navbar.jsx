@@ -12,13 +12,7 @@ export default function Navbar() {
 
   return (
     <div className="relative">
-      <Image
-        className="absolute top-0 z-10"
-        src="/header_Shape.png"
-        alt="bg"
-        width={400}
-        height={300}
-      />
+      
       <div className="z-20 md:px-24 px-2 py-7 relative">
         {/* Mobile view */}
         <div>
@@ -56,25 +50,37 @@ export default function Navbar() {
 
                 <ul className="hidden md:flex custom:gap-7 md:gap-12 font-[700] text-[16px] text-[#003459]">
                   <li className="group relative">
-                    <Link href="/" className="hover:text-[#316377] transition-colors duration-200">
+                    <Link
+                      href="/"
+                      className="hover:text-[#316377] transition-colors duration-200"
+                    >
                       Home
                     </Link>
                     <span className="absolute left-0 bottom-[-3px] h-[2px] w-0 bg-[#003459] transition-all duration-300 group-hover:w-full"></span>
                   </li>
                   <li className="group relative">
-                    <Link href="/" className="hover:text-[#316377] transition-colors duration-200">
+                    <Link
+                      href="/category"
+                      className="hover:text-[#316377] transition-colors duration-200"
+                    >
                       Category
                     </Link>
                     <span className="absolute left-0 bottom-[-3px] h-[2px] w-0 bg-[#003459] transition-all duration-300 group-hover:w-full"></span>
                   </li>
                   <li className="group relative">
-                    <Link href="/" className="hover:text-[#316377] transition-colors duration-200">
+                    <Link
+                      href="/"
+                      className="hover:text-[#316377] transition-colors duration-200"
+                    >
                       About
                     </Link>
                     <span className="absolute left-0 bottom-[-3px] h-[2px] w-0 bg-[#003459] transition-all duration-300 group-hover:w-full"></span>
                   </li>
                   <li className="group relative">
-                    <Link href="/" className="hover:text-[#316377] transition-colors duration-200">
+                    <Link
+                      href="/"
+                      className="hover:text-[#316377] transition-colors duration-200"
+                    >
                       Contact
                     </Link>
                     <span className="absolute left-0 bottom-[-3px] h-[2px] w-0 bg-[#003459] transition-all duration-300 group-hover:w-full"></span>
