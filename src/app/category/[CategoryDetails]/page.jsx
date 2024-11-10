@@ -97,7 +97,7 @@ export default function PetPage({ params }) {
     if (selectedPet) {
       setMainImage(selectedPet.imageSrc);
     }
-  }, [params.CategoryDetails]);
+  }, []);
 
   return (
     <section>
@@ -197,6 +197,7 @@ export default function PetPage({ params }) {
         </main>
       </section>
       <main className=" px-4 md:px-10 lg:px-20">
+        <h2 className="text-[24px] font-[700] text-[#00171F]">Our lovely customer</h2>
       <Swiper
         modules={[Pagination, Navigation]}
         spaceBetween={5} // Reduced gap between slides
@@ -229,7 +230,7 @@ export default function PetPage({ params }) {
               alt={`Customer ${index}`}
               width={328}
               height={853}
-              className="rounded-lg w-full h-auto mt-16 px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12"
+              className="rounded-lg w-full h-auto mt-8 px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12"
             />
           </SwiperSlide>
         ))}

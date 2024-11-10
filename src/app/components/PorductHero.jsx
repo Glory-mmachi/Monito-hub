@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function ProductHero() {
   return (
     <section className="md:px-24 px-4 py-10">
-      <div className="max-w-[1080px] mx-auto h-auto rounded-[20px] overflow-hidden bg-[#003459] relative flex flex-col md:flex-row justify-between">
+      <div className="max-w-[1080px] mx-auto h-auto rounded-[20px] overflow-hidden bg-[#003459] relative flex flex-col md:flex-row justify-between items-center">
         
         {/* Background Images */}
         <Image
@@ -30,7 +30,7 @@ export default function ProductHero() {
         />
 
         {/* Right Section (Text and Buttons) */}
-        <div className="z-20 bg-amber-40 pr-12 pt-7 text-[#003459] w-full text-center md:text-right md:order-2">
+        <div className="z-20 bg-amber-40 md:pr-12 pt-7 text-[#003459] w-full text-center md:text-right md:order-2">
           <div className="md:text-end px-4 md:px-0">
             <h1 className="text-[28px] md:text-[45px] font-[800]">One more friend</h1>
             <h2 className="text-[24px] md:text-[36px] font-[700]">Thousands more fun!</h2>

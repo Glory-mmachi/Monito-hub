@@ -75,7 +75,7 @@ export default function Categories() {
       <div>
         {/* Top section */}
         <section className="flex justify-between items-center">
-          <div className="flex md:block flex-col justify-center items-center">
+          <div className="flex md:block text-center md:text-start flex-col justify-center items-center">
             <p className="font-[500] text-[16px]">Whats new?</p>
             <h2 className="font-[700] text-[24px] text-[#F7DBA7]">
               Take a look at some of our pets
@@ -132,7 +132,7 @@ export default function Categories() {
             ))}
           </main>
         </section>
-
+        <Link href="/category">
         <div className="flex justify-center items-center w-full">
           <button className="mt-10 flex justify-center items-center w-full  md:hidden text-[#003459] text-[14px]  font-[500] border border-[#003459] py-2 rounded-[57px] transition-transform duration-200 hover:scale-105">
             View more
@@ -141,6 +141,7 @@ export default function Categories() {
             </span>
           </button>
         </div>
+        </Link>
       </div>
     </section>
   );

@@ -4,7 +4,7 @@ export default function AdoptionHero() {
   return (
     <section className="md:px-24 px-4 py-10">
       <section className="flex justify-between items-center">
-        <div className="flex md:block flex-col justify-center items-center">
+        <div className="flex md:block flex-col justify-center items-center text-center md:text-start w-full md:w-1/2">
           <h2 className="font-[500] text-[16px]">
             Proud to be part of
             <span className="font-[700] text-[24px] pl-1 text-[#003459]">
@@ -21,7 +21,7 @@ export default function AdoptionHero() {
           </button>
         </div>
       </section>
-      <section className="flex flex-wrap items-center md:gap-[4.5rem]">
+      <section className="flex flex-wrap justify-center items-center md:gap-[4.5rem]">
         <Image src="/sheba.svg" alt="logo" width={88} height={64} />
         <Image src="/whiska.svg" alt="logo" width={88} height={64} />
         <Image src="/baker.svg" alt="logo" width={88} height={64} />
@@ -55,11 +55,11 @@ export default function AdoptionHero() {
         />
 
         {/* Right Section (Text and Buttons) */}
-        <div className="z-20 bg-amber-40 pr-12 pt-7 text-[#003459] w-full text-center md:text-right md:order-1">
+        <div className="z-20 bg-amber-40 md:pr-12 pt-7 text-[#003459] w-full text-center md:text-right md:order-1">
           <div className="md:text-start px-4 md:pl-16">
             <h1 className="text-[28px] md:text-[52px] font-[800]">Adoption</h1>
             <h2 className="text-[30px] font-[700]">
-              We need help. so do they.
+              We need help. <br /> so do they.
             </h2>
             <p className="text-[12px] font-[500] md:mt-2">
               Adopt a pet and give it a home,

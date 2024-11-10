@@ -35,7 +35,7 @@ export default function PetKnowledge() {
       <div>
         {/* Top section */}
         <section className="flex justify-between items-center">
-          <div className="flex md:block flex-col justify-center items-center">
+          <div className="flex md:block flex-col text-center w-full md:w-1/2 md:text-start">
             <h2 className="font-[500] text-[16px]">You already know ?</h2>
             <p className="font-[700] text-[24px] text-[#003459]">
               Useful pet knowledge

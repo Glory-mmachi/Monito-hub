@@ -74,7 +74,7 @@ export default function Products() {
       <div>
         {/* Top section */}
         <section className="flex justify-between items-center">
-          <div className="flex md:block flex-col justify-center items-center">
+          <div className="flex md:block text-center md:text-start flex-col w-full md:w-1/2">
             <h2 className="font-[500] text-[16px]">
               Hard to choose right products for your pets?
             </h2>
@@ -104,17 +104,17 @@ export default function Products() {
                 key={pet.id}
                 className="w-[250px] h-[446px] shadow-md flex flex-col px-2 rounded-[12px] gap-8 mx-auto hover:scale-105 transition-transform duration-500"
               >
-                 <div className="w-[240px] h-[250px] overflow-hidden rounded-[10px]">
-                 <div className="w-full h-full overflow-hidden rounded-[10px] transition-transform duration-500 hover:scale-105">
-                <Image
-                  className="rounded-[10px]"
-                  src={pet.imageSrc}
-                  alt={pet.name}
-                  width={264}
-                  height={264}
-                />
-              </div>
-              </div>
+                <div className="w-[240px] h-[250px] overflow-hidden rounded-[10px]">
+                  <div className="w-full h-full overflow-hidden rounded-[10px] transition-transform duration-500 hover:scale-105">
+                    <Image
+                      className="rounded-[10px]"
+                      src={pet.imageSrc}
+                      alt={pet.name}
+                      width={264}
+                      height={264}
+                    />
+                  </div>
+                </div>
                 <div>
                   <h1 className="text-[16px] font-[700]">{pet.name}</h1>
                   <div className="flex items-center gap-1">

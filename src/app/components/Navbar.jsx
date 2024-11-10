@@ -105,7 +105,7 @@ export default function Navbar() {
                   <Link href="/">Home</Link>
                 </li>
                 <li className="cursor-pointer hover:text-[#316377] transition-colors duration-200">
-                  <Link href="/">Category</Link>
+                  <Link href="/category">Category</Link>
                 </li>
                 <li className="cursor-pointer hover:text-[#316377] transition-colors duration-200">
                   <Link href="/">About</Link>
