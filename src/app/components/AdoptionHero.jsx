@@ -1,8 +1,11 @@
+"use client"
 import React from "react";
-import Image from "next/image";
+import Image from "next/image"
+import {motion} from "framer-motion"
 export default function AdoptionHero() {
+
   return (
-    <section className="md:px-24 px-4 py-10">
+    <section className="md:px-24 px-4 py-10 overflow-x-clip">
       <section className="flex justify-between items-center">
         <div className="flex md:block flex-col justify-center items-center text-center md:text-start w-full md:w-1/2">
           <h2 className="font-[500] text-[16px]">
@@ -21,7 +24,21 @@ export default function AdoptionHero() {
           </button>
         </div>
       </section>
-      <section className="flex flex-wrap justify-center items-center md:gap-[4.5rem]">
+      <div className="[mask-image:linear-gradient(to_right,transparent,black,transparent)]">
+
+    
+      <motion.div
+        className="flex justify-center items-center md:gap-[4.5rem] md:pr-[4.5rem] "
+        animate={{
+          translateX: "-50%",
+        }}
+        transition={{
+          duration: 20,
+          repeat: Infinity,
+          ease: "linear",
+          repeatType: "loop",
+        }}
+      >
         <Image src="/sheba.svg" alt="logo" width={88} height={64} />
         <Image src="/whiska.svg" alt="logo" width={88} height={64} />
         <Image src="/baker.svg" alt="logo" width={88} height={64} />
@@ -29,7 +46,14 @@ export default function AdoptionHero() {
         <Image src="/good_boy.svg" alt="logo" width={88} height={64} />
         <Image src="/butcher.svg" alt="logo" width={88} height={64} />
         <Image src="/pedigree.svg" alt="logo" width={88} height={64} />
-      </section>
+        <Image src="/sheba.svg" alt="logo" width={88} height={64} />
+        <Image src="/whiska.svg" alt="logo" width={88} height={64} />
+        <Image src="/baker.svg" alt="logo" width={88} height={64} />
+        <Image src="/felix.svg" alt="logo" width={88} height={64} />
+        <Image src="/good_boy.svg" alt="logo" width={88} height={64} />
+        <Image src="/butcher.svg" alt="logo" width={88} height={64} />
+        <Image src="/pedigree.svg" alt="logo" width={88} height={64} />
+      </motion.div>  </div>
       <div className="max-w-[1080px] mx-auto h-auto rounded-[20px] overflow-hidden bg-[#FFB775] relative flex flex-col md:flex-row justify-between">
         {/* Background Images */}
         <Image

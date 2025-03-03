@@ -4,18 +4,18 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <section className="bg-[#FCEED5] h-screen relative rounded-b-[40px]">
+    <section className="bg-[#FCEED5] md:min-h-screen relative rounded-b-[40px]">
       <div>
         <Navbar />
         <Image
-        className="absolute top-0 z-10"
-        src="/header_Shape.png"
-        alt="bg"
-        width={400}
-        height={300}
-      />
+          className="absolute top-0 z-10"
+          src="/header_Shape.png"
+          alt="bg"
+          width={400}
+          height={300}
+        />
         {/* Hero section */}
-        <main className="md:px-24 px-4 pt-14 text-[#002A48] flex flex-col md:flex-row justify-between">
+        <main className="md:px-24 px-4 pt-14 text-[#002A48] flex flex-col md:flex-row justify-between gap-10">
           {/* Left hero section */}
           <div className="relative md:w-[50%] w-full">
             {/* Shapes and text */}
@@ -67,7 +67,7 @@ export default function Header() {
           />
 
           {/* Right hero section */}
-          <div className="md:w-[50%] w-full mt-8 md:mt-0">
+          <div className="md:w-[50%] w-full  md:mt-1">
             <div className="relative">
               {/* Decorative shapes */}
               <Image
@@ -110,7 +110,7 @@ export default function Header() {
                 height={635}
               />
               <Image
-                className="absolute bottom-0 w-[300px] md:w-[500px]"
+                className="md:absolute bottom-0 z-10 w-[300px] md:w-[500px]"
                 src="/HeroImage.svg"
                 alt="Hero Image"
                 width={350}
